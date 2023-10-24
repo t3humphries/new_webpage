@@ -81,11 +81,13 @@ function toggleBibtex{{entry.key}}(parameter) {
     }
 }
 function toggleAbstract{{entry.key}}(parameter) {
-    var x= document.getElementById('b{{entry.key}}');
+    var x = document.getElementById('b{{entry.key}}');
     if (x.style.display === 'none') {
         x.style.display = 'block';
+        x.style.backgroundColor = 'white'; // Set the background color to white
     } else {
         x.style.display = 'none';
+        x.style.backgroundColor = ''; // Reset the background color
     }
 }
 </script>
